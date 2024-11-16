@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+}
+#main_body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+#main_text{
+    padding: 1rem;
+} 
+#main_heading{
+    font-weight: bold;
+}
+#navigation_menu{
+    display: flex;
+}
+#navigation_bar{
+    display: flex;
+    justify-content: space-around;
+}
+#menu_button{
+    
+}
+#navigation_item{
+    display: none;
+}
+
+@media screen and (max-width:600px){
+#navigation_bar{
+    display: none;
+}
+#navigation_item{
+    display: block;
+}
+}

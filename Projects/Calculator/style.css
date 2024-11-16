@@ -1,0 +1,71 @@
+html, body {
+    height: 100%; 
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(57, 57, 133);
+}
+
+.main_component {
+    border: 3px solid black;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 2px solid black; /* Add border */
+    border-radius: 5px;
+}
+ #result{
+    width: 40rcap;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    padding-right: 10px;
+    border: 2px solid black; /* Add border */
+    border-radius: 5px;
+    text-align: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    background-color:cornflowerblue;
+ }
+
+ #inputs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
+    grid-template-rows: repeat(4, 1fr);    /* 4 equal-height rows */
+    gap: 10px; /* Optional spacing between grid items */
+    width: 100%; /* Make it full width within .main_component */
+    padding-top: 10px;
+}
+
+#inputs button {
+    height: 50px; /* Set button height */
+    background-color: lightgray;
+    border: 2px solid black; /* Add border */
+    border-radius: 5px;
+    font-size: medium;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+#inputs #reset {
+    grid-column: span 2; 
+    background-color:rgb(65, 65, 227);
+    color: white; /* Set text color for contrast */
+}
+
+#inputs #answer {
+    grid-column: span 2; 
+    background-color: red;
+    color: white; /* Set text color for contrast */
+}
+
+#inputs #del {
+    background-color:rgb(65, 65, 227);
+    color: white; /* Set text color for contrast */
+}
+#inputs button:hover {
+    background-color: darkgray; /* Change color on hover */
+}

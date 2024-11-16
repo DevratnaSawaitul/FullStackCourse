@@ -1,0 +1,9 @@
+body{
+    /* background-color: lightblue; */
+    height: 100vh;
+    background-image: url('download.png');
+    background-repeat: no-repeat;
+    /* background-position: 20px 20px; */
+    background-size: contain;/*cover, auto*/
+    background-attachment: scroll;/*fixed*/
+}

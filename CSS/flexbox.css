@@ -1,0 +1,25 @@
+.main_div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sub_div{
+    width: 45%;
+    max-width: 400px;
+    min-width: 300px;
+    max-height: 400px;
+    min-height: 300px;
+}
+.div1{
+    background-color: red;
+}
+.div2{
+    background-color: yellow;
+}
+.div3{
+    background-color: green;
+}
+.div4{
+    background-color: blue;
+}

@@ -1,0 +1,25 @@
+.div1{
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    margin: 20px;
+    padding: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.div2{
+    border: 2px dashed purple;
+    margin: 10px 20px 30px 40px;
+    padding: 10px 20px 30px 40px;
+    display: inline-block;
+    box-sizing: content-box;
+}
+.div3{
+    border-left-style: dashed;
+    border-right-style: dotted;
+    border-bottom-style:double;
+    border-top-style: double;
+    border-color: black blue red yellow; /*in one line clock wise top to left*/
+    border-width: 2px;
+    border-radius:10px;
+}

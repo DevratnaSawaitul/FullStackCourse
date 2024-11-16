@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-color-common: #FFFFFF;
+    --font-color-head: #000000;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main_div {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.sub_div1 {
+    background-color: #FFCD9E;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.sub_div2 {
+    background-color: #282828;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 20px;
+    width: 100%;
+}
+
+.sub_div_1_1, .sub_div_1_2 {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.man_img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.font_color {
+    color: var(--font-color-common);
+    padding: 2.5px;
+    font-family: Inter, sans-serif;
+}
+
+.font_color_head {
+    color: var(--font-color-head);
+    padding: 20px;
+    font-family: Inter, sans-serif;
+}
+
+.sub_div2_1, .sub_div2_2 {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px 10px;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.reg_button {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 20px;
+    font-family: Inter, sans-serif;
+}
+
+.input_box {
+    border: 2px solid #282828;
+    padding: 10px;
+    width: calc(100% - 160px);
+}
+
+.input_button_container {
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 600px) {
+    .sub_div_1_1, .sub_div_1_2 {
+        width: 45%;
+    }
+
+    .sub_div2_1, .sub_div2_2 {
+        width: 45%;
+    }
+}
+
+
+/*
+Certainly! Managing the footer to stick to the bottom of the page and fill the remaining space involves a few CSS techniques. Here’s a detailed explanation of how it's achieved:
+
+### HTML Structure
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="html_css_project1.css">
+</head>
+<body>
+    <div class="main_div">
+        <!-- Content section 1 -->
+        <div class="sub_div1">
+            <!-- Left content -->
+            <div class="sub_div_1_1">
+                <!-- Content here -->
+            </div>
+            <!-- Right content (image or other) -->
+            <div class="sub_div_1_2">
+                <!-- Image here -->
+            </div>
+        </div>
+        
+        <!-- Content section 2 -->
+        <div class="sub_div2">
+            <!-- Left content -->
+            <div class="sub_div2_1">
+                <!-- Content here -->
+            </div>
+            <!-- Right content (footer content) -->
+            <div class="sub_div2_2">
+                <!-- Footer content -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+```
+
+### CSS Explanation
+
+1. **Body and HTML Styles:**
+   ```css
+   html, body {
+       height: 100%;
+   }
+   body {
+       display: flex;
+       flex-direction: column;
+   }
+   ```
+   - **`html, body { height: 100%; }`**: Ensures that the `html` and `body` elements take up the full height of the viewport. This is necessary for ensuring that the footer can be positioned at the bottom of the viewport.
+
+   - **`body { display: flex; flex-direction: column; }`**: Turns the `body` into a flex container with a vertical column layout. This allows us to use flex properties to control the positioning of the content sections and the footer.
+
+2. **Main Container (`main_div`):**
+   ```css
+   .main_div {
+       display: flex;
+       flex-direction: column;
+       flex-grow: 1;
+       min-height: 100vh;
+   }
+   ```
+   - **`display: flex; flex-direction: column;`**: Makes `main_div` a flex container with a vertical column layout. This ensures that the content sections (`sub_div1` and `sub_div2`) stack vertically.
+
+   - **`flex-grow: 1;`**: This property makes `main_div` grow to fill the remaining vertical space of the `body`. This is crucial for pushing the footer (`sub_div2`) to the bottom of the viewport.
+
+   - **`min-height: 100vh;`**: Sets a minimum height of `100vh` (100% of the viewport height) for `main_div`. This ensures that even if the content inside `main_div` is not enough to fill the viewport, `main_div` will still stretch to at least the full viewport height.
+
+3. **Content Sections (`sub_div1` and `sub_div2`):**
+   ```css
+   .sub_div1, .sub_div2 {
+       width: 100%;
+       max-width: 100%;
+       padding: 20px;
+   }
+   ```
+   - **`width: 100%; max-width: 100%;`**: Ensures that both content sections (`sub_div1` and `sub_div2`) take up the full width of their parent (`main_div`). Setting `max-width: 100%;` ensures that they do not overflow their container.
+
+   - **`padding: 20px;`**: Adds padding around each content section for spacing.
+
+4. **Footer Section (`sub_div2`):**
+   ```css
+   .sub_div2 {
+       margin-top: auto;
+   }
+   ```
+   - **`margin-top: auto;`**: This is the key CSS technique for making the footer stick to the bottom of the viewport. By setting `margin-top: auto;` on `sub_div2`, it pushes `sub_div2` to the bottom of `main_div` because `main_div` is a flex container with `flex-direction: column`.
+
+   - **How `margin-top: auto;` works**: In a flex container with `flex-direction: column`, `margin-top: auto;` on an element pushes it to the bottom of the container, effectively taking up all remaining vertical space. This technique leverages flexbox’s alignment properties to ensure the footer sticks to the bottom.
+
+5. **Responsive Considerations**: Ensure all styles are responsive by using media queries to adjust widths, padding, and other styles as necessary for different screen sizes.
+
+### Summary
+
+By using `display: flex;` along with `flex-direction: column;` on the `body` and `main_div`, and applying `margin-top: auto;` to `sub_div2` (the footer section), you can achieve a responsive layout where the footer sticks to the bottom of the viewport and expands to fill the remaining space as the window size changes. This approach ensures a clean and adaptable layout for different screen sizes and content lengths.
+*/
