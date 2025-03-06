@@ -2,8 +2,6 @@ let arr = [1, 2, 3, 4]
 console.log(arr)
 let arr2 = [1, '2', "Str", true];
 console.log(arr2);
-
-
 for (let i = 0; i < arr2.length; i++) {
     console.log(arr2[i]);
 }
