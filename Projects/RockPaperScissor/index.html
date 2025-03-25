@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main_page">
+        <img id="win_gif" src="won.gif"
+            style="display: none; position: absolute; top: 30%; left: 50%; transform: translateX(-50%); z-index: 10;" />
+
+        <div id="buttons-container">
+            <button onclick="showRules()" id="rule_button" title="Show Rules">Rules</button>
+            <button onclick="clearScore()" id="clear_button" title="Clear Score">Clear</button>
+        </div>
+
+        <div id="show_rules">
+            <button id="close_rules" onclick="closeRules()">X</button>
+            <p id="rule_heading">Game Rule</p>
+            <p id="rule_text">Rock beats scissors: A closed fist breaks scissors.
+            </p>
+            <p id="rule_text">
+                Scissors beats paper: Scissors cut paper.
+            </p>
+            <p id="rule_text">
+                Paper beats rock: Paper covers rock.
+            </p>
+        </div>
+
+        <div id="score_card">
+            <div id="heading">
+                Rock Paper Scissor
+            </div>
+            <div id="score">
+                <div id="user_box">
+                    <p id="sub_heading">My Score</p>
+                    <p id="user_score">0</p>
+                </div>
+                <div id="pc_box">
+                    <p id="sub_heading">PC Score</p>
+                    <p id="pc_score">0</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="game_start">
+            <button id="stone_button" onclick="userResponse('stone')" title="stone">
+                ✊
+            </button>
+            <button id="paper_button" onclick="userResponse('paper')" title="paper">
+                ✋
+            </button>
+            <button id="scissor_button" onclick="userResponse('scissor')" title="scissor">
+                ✌️
+            </button>
+        </div>
+
+        <div id="game_result">
+            <button id="game_result_user">✌️</button>
+            <div id="game_result_help">
+                <p id="game_result_status">Status</p>
+                <p id="game_result_against">Against</p>
+                <button id="play_again_button" title="paly again" onclick="playAgain()">Play Again</button>
+            </div>
+            <button id="game_result_pc">✌️</button>
+        </div>
+    </div>
+</body>
+
+</html>
