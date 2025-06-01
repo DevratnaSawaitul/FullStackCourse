@@ -1,0 +1,48 @@
+.menu-body {
+    padding: 20px;
+    display: flex;
+    /* Add this */
+    flex-direction: column;
+    /* Stack children vertically */
+    align-items: center;
+    /* Center horizontally */
+    justify-content: center;
+    /* Optional: center vertically if height allows */
+    width: 400px;
+}
+
+.game-button {
+    margin: 2px;
+    margin-top: 10px;
+    width: 100%
+}
+
+.game-button:hover {
+    color: black;
+    background-color: yellow;
+}
+
+.menu-user {
+    background-color: gray;
+    width: 100%;
+    border: 10px solid transparent;
+    /* Fix invalid border */
+    border-radius: 10px;
+    padding-bottom: 10px;
+    /* lowercase px */
+    text-align: center;
+    /* Center text and buttons inside */
+}
+
+.menu-user button {
+    margin: 2px;
+    width: 100px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.menu-user button:hover,
+.active-choice {
+    background-color: yellow;
+    color: black;
+}

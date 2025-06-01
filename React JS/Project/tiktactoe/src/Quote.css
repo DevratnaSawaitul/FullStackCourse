@@ -1,0 +1,24 @@
+.quote-body{
+    border-color: white;
+    border: 1px;
+    border-radius: 20px;
+    border-style:solid;
+    color: yellow;
+    width:20%;
+    height: auto;
+    align-items: center;
+    align-content: center;
+    min-width: 200px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 20px;
+    padding:10px
+}
+.quote-heading{
+    color: white;
+}
+
+.quote-content{
+    color: palevioletred;
+}

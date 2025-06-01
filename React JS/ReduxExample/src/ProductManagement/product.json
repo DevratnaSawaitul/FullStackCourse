@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Laptop",
+        "price": 1200,
+        "url": "https://cdn.pixabay.com/photo/2019/10/23/08/16/coding-4570799_960_720.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Phone",
+        "price": 800,
+        "url": "https://cdn.pixabay.com/photo/2017/06/26/13/03/webdesigner-2443766_960_720.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Tablet",
+        "price": 450,
+        "url": "https://cdn.pixabay.com/photo/2019/10/23/08/16/coding-4570799_960_720.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Monitor",
+        "price": 300,
+        "url": "https://cdn.pixabay.com/photo/2017/06/26/13/03/webdesigner-2443766_960_720.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Keyboard",
+        "price": 50,
+        "url": "https://cdn.pixabay.com/photo/2019/10/23/08/16/coding-4570799_960_720.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Mouse",
+        "price": 30,
+        "url": "https://cdn.pixabay.com/photo/2017/06/26/13/03/webdesigner-2443766_960_720.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Pad",
+        "price": 50,
+        "url": "https://cdn.pixabay.com/photo/2019/10/23/08/16/coding-4570799_960_720.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Spray",
+        "price": 30,
+        "url": "https://cdn.pixabay.com/photo/2017/06/26/13/03/webdesigner-2443766_960_720.jpg"
+    }
+]

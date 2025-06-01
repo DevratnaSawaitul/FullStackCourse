@@ -1,0 +1,11 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heading{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size:xx-large
+}

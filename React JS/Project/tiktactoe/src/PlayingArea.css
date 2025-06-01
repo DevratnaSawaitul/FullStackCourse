@@ -1,0 +1,119 @@
+.playing-area-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.playing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.grid-cell {
+    border-radius: 10px;
+    background-color: gray;
+    border: 2px solid black;
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.grid-cell:hover {
+    background-color: darkgray;
+}
+
+.score-card {
+    display: flex;
+    justify-content: space-between;
+    /* evenly space items */
+    width: 100%;
+    /* take full width */
+    max-width: 600px;
+    /* optional: control max width */
+    padding: 10px;
+    font-weight: bold;
+}
+
+.score-card span {
+    background: peachpuff;
+    color: black;
+    margin: 2px;
+    margin-top: 10px;
+    border-radius: 5px;
+    min-width: 50px;
+    padding: 10px;
+}
+
+.playing-header {
+    display: flex;
+    justify-content: space-between;
+    /* evenly space items */
+    width: 100%;
+    /* take full width */
+    max-width: 600px;
+    /* optional: control max width */
+    padding: 10px;
+    font-weight: bold;
+}
+
+.playing-header span {
+    margin: 2px;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.playing-title {
+    background-color: transparent !important;
+    color: yellow !important;
+    font-size: large;
+}
+
+.playing-turn {
+    background-color: gray;
+    color: black;
+    font-size: large;
+}
+
+.refresh-icon {
+    background-color: white;
+    color: black;
+    font-size: large;
+    border-radius: 30px;
+    min-width: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.refresh-icon:hover {
+    background-color: lightgray;
+}
+
+.exit_button{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: red;
+    color: white;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.clear_score_button{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    margin: 10px;
+    font-weight: bold;
+}
