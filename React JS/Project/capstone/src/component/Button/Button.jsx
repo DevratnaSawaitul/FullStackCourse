@@ -1,9 +1,9 @@
-import React from "react";
+import styles from './Button.module.css'
 
-export default function Button() {
+export default function Button(props) {
   return (
-    <div>
-      <h1>Button</h1>
-    </div>
+    <button onClick={() => alert("I clicked")}>
+      {props.work || "Click Me"}
+    </button>
   );
 }

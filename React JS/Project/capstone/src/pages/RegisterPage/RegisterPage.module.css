@@ -1,0 +1,10 @@
+.register_page_main_body{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+}
+.register_page_content{
+    height: 100vh;
+    min-width: 500px;
+    width: 50vw;
+}
