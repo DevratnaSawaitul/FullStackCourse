@@ -1,55 +1,59 @@
-.register_body{
-    align-items: center;
-    align-content: center;
-    display: flex;
-    flex-direction: column;
-    padding: 10% 25% 0 25%;
-    color: white;
-}
-.register_input{
-    width: 100%;
-    border: 10px;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 5px;
-    background-color: gray;
-    color: black;
+.register_body {
+  align-items: center;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10% 25% 0 25%;
+  color: white;
 }
 
-.register_checkbox{
+.register_input {
+  width: 100%;
+  border: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  background-color: gray;
+  color: black;
+}
+
+.register_checkbox {
   align-self: flex-start;
   margin: 10px 0;
   display: flex;
   align-items: center;
   font-size: 0.9rem;
 }
-.heading{
-  color: greenyellow;
-font-size: xx-large;
-padding: 10px;
-  font-family:'Courier New', Courier, monospace;
+
+.heading {
+  color: rgba(114, 219, 115, 1);
+  font-size: xx-large;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-.sub_heading{
+.sub_heading {
   font-family: 'Courier New', Courier, monospace;
   padding: 10px;
   margin-bottom: 10px;
 }
 
-.footer_text, .register_checkbox{
-font-weight: lighter;
-font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-font-size: small;
-margin-top: 5px;
+.footer_text,
+.register_checkbox {
+  font-weight: lighter;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: small;
+  margin-top: 5px;
 }
 
-.link_font{
+.link_font {
   color: greenyellow;
   text-decoration: none;
 }
 
-/* .register_input:hover {
-  border: 2px solid red;
-  outline: none; 
+.error_text {
+  color: red;
+  text-align: left;
+  align-self: flex-start;
+  font-size: 0.8rem;
 }
- */

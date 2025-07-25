@@ -1,10 +1,18 @@
-button{
-    background-color: greenyellow;
-    width: 100%;
-    color: white;
-    border-radius: 20px;
-    padding: 5px;
-    border: none;
-    font-size: medium;
-margin: 10px 0 20px 0;
+.button {
+  background: rgba(20, 138, 8, 1);
+  color: white;
+  border-radius: 20px;
+  padding: 5px 20px;
+  border: none;
+  font-size: medium;
+  margin: 10px 0 20px 0;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.button:hover{
+  transform: scale(1.1);
+  background: darkgreen;
 }

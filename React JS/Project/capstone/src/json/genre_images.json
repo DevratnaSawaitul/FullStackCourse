@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Action",
+    "image_url": [
+      "src/images/Content/Action/1.png",
+      "src/images/Content/Action/2.png",
+      "src/images/Content/Action/3.png",
+      "src/images/Content/Action/4.png"
+    ]
+  },
+  {
+    "name": "Drama",
+    "image_url": [
+      "src/images/Content/Drama/1.png",
+      "src/images/Content/Drama/2.png",
+      "src/images/Content/Drama/3.png",
+      "src/images/Content/Drama/4.png"
+    ]
+  },
+  {
+    "name": "Romance",
+    "image_url": [
+      "src/images/Content/Romance/1.png",
+      "src/images/Content/Romance/2.png",
+      "src/images/Content/Romance/3.png",
+      "src/images/Content/Romance/4.png"
+    ]
+  },
+  {
+    "name": "Thriller",
+    "image_url": [
+      "src/images/Content/Thriller/1.png",
+      "src/images/Content/Thriller/2.png",
+      "src/images/Content/Thriller/3.png",
+      "src/images/Content/Thriller/4.png"
+    ]
+  },
+  {
+    "name": "Western",
+    "image_url": [
+      "src/images/Content/Western/1.png",
+      "src/images/Content/Western/2.png",
+      "src/images/Content/Western/3.png",
+      "src/images/Content/Western/4.png"
+    ]
+  },
+  {
+    "name": "Horror",
+    "image_url": [
+      "src/images/Content/Horror/1.png",
+      "src/images/Content/Horror/2.png",
+      "src/images/Content/Horror/3.png",
+      "src/images/Content/Horror/4.png"
+    ]
+  },
+  {
+    "name": "Fanatasy",
+    "image_url": [
+      "src/images/Content/Fanatasy/1.png",
+      "src/images/Content/Fanatasy/2.png",
+      "src/images/Content/Fanatasy/3.png",
+      "src/images/Content/Fanatasy/4.png"
+    ]
+  },
+  {
+    "name": "Music",
+    "image_url": [
+      "src/images/Content/Music/1.png",
+      "src/images/Content/Music/2.png",
+      "src/images/Content/Music/3.png",
+      "src/images/Content/Music/4.png"
+    ]
+  },
+  {
+    "name": "Fiction",
+    "image_url": [
+      "src/images/Content/Fiction/1.png",
+      "src/images/Content/Fiction/2.png",
+      "src/images/Content/Fiction/3.png",
+      "src/images/Content/Fiction/4.png"
+    ]
+  }
+]
