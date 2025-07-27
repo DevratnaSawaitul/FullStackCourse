@@ -3,7 +3,7 @@ import styles from './Register.module.css'
 import Button from "../Button/Button";
 import { useContext } from "react";
 import { RegisterContext } from "../../context/registerContext.jsx";
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 export default function Register() {
   const { registerInputs, setRegisterInputs } = useContext(RegisterContext);
   const navigate = useNavigate();

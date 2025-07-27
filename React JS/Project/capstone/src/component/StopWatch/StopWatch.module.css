@@ -1,0 +1,58 @@
+.stopwatch_container {
+  background: rgba(30, 35, 67, 1);
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  text-align: center;
+}
+
+.round_timer {
+  font-size: xx-large;
+  font-weight: bold;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.timer_inputs_container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 100%;
+  margin: 0px 20px;
+  gap: 10px;
+}
+
+.timer_inputs_sub_container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%
+}
+
+.timer_inputs {
+  font-size: xx-large;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer_up,
+.timer_down {
+  margin: 10px;
+}
+
+.input_labels
+{
+  font-size: large;
+  font-weight: normal;
+}

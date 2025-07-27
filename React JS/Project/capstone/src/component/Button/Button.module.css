@@ -2,11 +2,19 @@
   background: rgba(20, 138, 8, 1);
   color: white;
   border-radius: 20px;
-  padding: 5px 20px;
+  padding: 5px 15px;
   border: none;
   font-size: medium;
-  margin: 10px 0 20px 0;
+  margin: 5px;           
+  white-space: nowrap;   
 }
+
+.close_icon {
+  margin-left: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 
 .fullWidth {
   width: 100%;
@@ -15,4 +23,13 @@
 .button:hover{
   transform: scale(1.1);
   background: darkgreen;
+}
+
+.profileButton {
+  background: rgba(159, 148, 255, 1) !important; /* ✅ new color */
+}
+
+.profileButton:hover {
+  transform: scale(1.1);
+  background: rgb(120, 110, 230); /* ✅ slightly darker on hover */
 }

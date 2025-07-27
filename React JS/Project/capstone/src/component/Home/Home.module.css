@@ -1,0 +1,63 @@
+.home_container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+}
+
+.home_body {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 70fr 130px 30fr;
+  grid-template-areas:
+    "profile notes news"
+    "weather notes news"
+    "stopwatch stopwatch news";
+  gap: 30px;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: black;
+  box-sizing: border-box;
+}
+
+.side_button {
+  flex-shrink: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  background-color: black;
+  box-sizing: border-box;
+}
+
+
+/* Assign grid areas */
+.home_body> :nth-child(1) {
+  grid-area: profile;
+}
+
+.home_body> :nth-child(2) {
+  grid-area: notes;
+}
+
+.home_body> :nth-child(3) {
+  grid-area: news;
+}
+
+.home_body> :nth-child(4) {
+  grid-area: weather;
+}
+
+.home_body> :nth-child(5) {
+  grid-area: stopwatch;
+}
+
+/* Card styles */
+.home_body>div {
+  border-radius: 10px;
+  color: white;
+}

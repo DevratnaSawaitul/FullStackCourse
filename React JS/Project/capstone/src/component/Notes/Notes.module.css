@@ -1,0 +1,42 @@
+.notes_body {
+  background: rgba(241, 199, 91, 1);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.notes_heading {
+  color: black;
+  font-size: xx-large;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+}
+
+.notes_input_container {
+  margin-top: 15px;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.notes_input {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  border: none;
+  background-color: transparent;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-y: auto;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.notes_input:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}

@@ -4,12 +4,15 @@ import App from './App.jsx'
 import './main.css';
 import { BrowserRouter } from 'react-router-dom';
 import RegisterContextProvider from './context/registerContext.jsx';
+import GenreContextProvider from './context/GenreContext.jsx';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <StrictMode>
       <RegisterContextProvider>
-        <App />
+        <GenreContextProvider>
+          <App />
+        </GenreContextProvider>
       </RegisterContextProvider>
     </StrictMode>
   </BrowserRouter>

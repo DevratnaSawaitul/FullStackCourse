@@ -5,7 +5,10 @@
       "src/images/Content/Action/1.png",
       "src/images/Content/Action/2.png",
       "src/images/Content/Action/3.png",
-      "src/images/Content/Action/4.png"
+      "src/images/Content/Action/4.png",
+      "src/images/Content/Action/5.png",
+      "src/images/Content/Action/6.png",
+      "src/images/Content/Action/7.png"
     ]
   },
   {
@@ -14,7 +17,11 @@
       "src/images/Content/Drama/1.png",
       "src/images/Content/Drama/2.png",
       "src/images/Content/Drama/3.png",
-      "src/images/Content/Drama/4.png"
+      "src/images/Content/Drama/4.png",
+      "src/images/Content/Drama/5.png",
+      "src/images/Content/Drama/6.png",
+      "src/images/Content/Drama/7.png",
+      "src/images/Content/Drama/8.png"
     ]
   },
   {
@@ -50,16 +57,19 @@
       "src/images/Content/Horror/1.png",
       "src/images/Content/Horror/2.png",
       "src/images/Content/Horror/3.png",
-      "src/images/Content/Horror/4.png"
+      "src/images/Content/Horror/4.png",
+      "src/images/Content/Horror/5.png",
+      "src/images/Content/Horror/6.png",
+      "src/images/Content/Horror/7.png"
     ]
   },
   {
-    "name": "Fanatasy",
+    "name": "Fantasy",
     "image_url": [
-      "src/images/Content/Fanatasy/1.png",
-      "src/images/Content/Fanatasy/2.png",
-      "src/images/Content/Fanatasy/3.png",
-      "src/images/Content/Fanatasy/4.png"
+      "src/images/Content/Fantasy/1.png",
+      "src/images/Content/Fantasy/2.png",
+      "src/images/Content/Fantasy/3.png",
+      "src/images/Content/Fantasy/4.png"
     ]
   },
   {

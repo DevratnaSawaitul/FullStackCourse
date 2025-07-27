@@ -1,14 +1,14 @@
 import styles from './Button.module.css';
 
-export default function Button(props) {
-  const isRegister = props.work === 'Register';
-
+export default function Button({ work, onClick, removable, profile }) {
+  const isRegister = ['Register', 'Start', 'Stop'].includes(work);
+  const isProfile = profile === true;
   return (
     <button
-      onClick={props.onClick}
-      className={`${styles.button} ${isRegister ? styles.fullWidth : ''}`}
+      onClick={onClick}
+      className={`${styles.button} ${isRegister ? styles.fullWidth : ''} ${isProfile ? styles.profileButton : ''}`}
     >
-      {props.work || "Click Me"}
+      {work ?? 'Click Me'} {removable && <span className={styles.close_icon}>×</span>}
     </button>
   );
 }
