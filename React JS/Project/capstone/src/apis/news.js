@@ -15,11 +15,11 @@ export const getNews = async () => {
     throw new Error("Unable to load news!");
   } catch (e) {
     console.error("Error fetching news:", e);
-    Swal.fire({
-      title: "Something went wrong!",
-      text: "Please try again after some time.",
-      icon: "error",
-    });
+    // Swal.fire({
+    //   title: "Something went wrong!",
+    //   text: "Please try again after some time.",
+    //   icon: "error",
+    // });
     return null;
   }
 };
