@@ -1,47 +1,47 @@
 [
   {
     "name": "Action",
-    "image_url": "src/images/Genre/Action.png",
+    "image_url": "src/images/genre/Action.png",
     "bg_color": "#ff4500" 
   },
   {
     "name": "Drama",
-    "image_url": "src/images/Genre/Drama.png",
+    "image_url": "src/images/genre/Drama.png",
     "bg_color": "#d6a8ff" 
   },
   {
     "name": "Romance",
-    "image_url": "src/images/Genre/Romance.png",
+    "image_url": "src/images/genre/Romance.png",
     "bg_color": "#1fa309"  
   },
   {
     "name": "Thriller",
-    "image_url": "src/images/Genre/Thriller.png",
+    "image_url": "src/images/genre/Thriller.png",
     "bg_color": "#6ec6ff" 
   },
   {
     "name": "Western",
-    "image_url": "src/images/Genre/Western.png",
+    "image_url": "src/images/genre/Western.png",
     "bg_color": "#5d1206" 
   },
   {
     "name": "Horror",
-    "image_url": "src/images/Genre/Horror.png",
+    "image_url": "src/images/genre/Horror.png",
     "bg_color": "#885cf6" 
   },
   {
     "name": "Fantasy",
-    "image_url": "src/images/Genre/Fantasy.png",
+    "image_url": "src/images/genre/Fantasy.png",
     "bg_color": "#ff4fcf" 
   },
   {
     "name": "Music",
-    "image_url": "src/images/Genre/Music.png",
+    "image_url": "src/images/genre/Music.png",
     "bg_color": "#d0021b"  
   },
   {
     "name": "Fiction",
-    "image_url": "src/images/Genre/Fiction.png",
+    "image_url": "src/images/genre/Fiction.png",
     "bg_color": "#66c466"  
   }
 ]
