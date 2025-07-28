@@ -4,7 +4,7 @@ import axios from "axios";
 export const getMovies = async (genre) => {
   try {
     const api_key = import.meta.env.VITE_MOVIES_API_KEY;
-    const request_url = `http://www.omdbapi.com/?s=${genre}&apikey=${api_key}`;
+    const request_url = `https://www.omdbapi.com/?s=${genre}&apikey=${api_key}`;
     const response = await axios.get(request_url);
     if (
       response.data.Response === "True" &&
