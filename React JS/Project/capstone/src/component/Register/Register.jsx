@@ -2,7 +2,7 @@ import React, { use, useState } from "react";
 import styles from './Register.module.css'
 import Button from "../Button/Button";
 import { useContext } from "react";
-import { RegisterContext } from "../../context/registerContext.jsx";
+import { RegisterContext } from "../../context/RegisterContext.jsx";
 import { useNavigate } from "react-router-dom";
 export default function Register() {
   const { registerInputs, setRegisterInputs } = useContext(RegisterContext);
