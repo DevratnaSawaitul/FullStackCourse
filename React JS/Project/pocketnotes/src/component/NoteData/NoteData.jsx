@@ -10,7 +10,7 @@ export default function NoteData() {
     const [userInput, setUserInput] = useState("");
     const [editId, setEditId] = useState(null);
 
-    const scrollRef = useRef(null); // ✅ ref to scroll container
+    const scrollRef = useRef(null); 
 
     const returnToGroup = () => setSelectedGroup(null);
 
@@ -43,7 +43,6 @@ export default function NoteData() {
         setEditId(note.id);
     };
 
-    // ✅ Ensure useEffect is always called (fixes hook order error)
     useEffect(() => {
         if (selectedGroup && scrollRef.current) {
             const notes = notesData[selectedGroup]?.notes || [];
@@ -53,10 +52,8 @@ export default function NoteData() {
         }
     }, [selectedGroup, notesData]);
 
-    // ✅ Prepare notes safely
     const displayNotes = selectedGroup ? notesData[selectedGroup]?.notes || [] : [];
 
-    // ✅ Safe early return after all hooks are declared
     if (!selectedGroup) {
         return (
             <div className={styles.note_data_body}>
@@ -80,7 +77,6 @@ export default function NoteData() {
 
     return (
         <div className={styles.note_data_body}>
-            {/* Header */}
             <div className={styles.notes_header_data}>
                 {mobileView && <h2 className={styles.back_arrow} onClick={returnToGroup}>&#x21d0;</h2>}
                 <p className={styles.data_name_dp} style={{ backgroundColor: notesData[selectedGroup].color }}>
@@ -89,7 +85,6 @@ export default function NoteData() {
                 <h2 title={selectedGroup}>{selectedGroup}</h2>
             </div>
 
-            {/* ✅ Attach ref here */}
             <div className={styles.notes_body_data} ref={scrollRef}>
                 {displayNotes.length === 0 && <p>Add Notes....</p>}
 
