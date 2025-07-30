@@ -62,12 +62,15 @@ export default function NoteData() {
 
     const displayNotes = notesData[selectedGroup].notes;
 
-    // ✅ Auto scroll to bottom when notes change
     useEffect(() => {
-        if (scrollRef.current) {
-            scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
+        if (selectedGroup && scrollRef.current) {
+            const notes = notesData[selectedGroup]?.notes || [];
+            if (notes.length > 0) {
+                scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
+            }
         }
-    }, [displayNotes]);
+    }, [selectedGroup, notesData]); // dependency updated
+
 
     return (
         <div className={styles.note_data_body}>
