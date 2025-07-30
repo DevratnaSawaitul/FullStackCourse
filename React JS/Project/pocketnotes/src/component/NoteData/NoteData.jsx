@@ -43,14 +43,32 @@ export default function NoteData() {
         setEditId(note.id);
     };
 
+    // ✅ Ensure useEffect is always called (fixes hook order error)
+    useEffect(() => {
+        if (selectedGroup && scrollRef.current) {
+            const notes = notesData[selectedGroup]?.notes || [];
+            if (notes.length > 0) {
+                scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
+            }
+        }
+    }, [selectedGroup, notesData]);
+
+    // ✅ Prepare notes safely
+    const displayNotes = selectedGroup ? notesData[selectedGroup]?.notes || [] : [];
+
+    // ✅ Safe early return after all hooks are declared
     if (!selectedGroup) {
         return (
             <div className={styles.note_data_body}>
                 <div className={styles.banner_style}>
                     <img src={banner} alt="Loading Banner..." className={styles.banner_img} />
                     <h1 className={styles.banner_heading}>Pocket Notes</h1>
-                    <h5 className={styles.banner_sub_heading}>Send and receive messages without keeping your phone online.</h5>
-                    <h5 className={styles.banner_sub_heading}>Use Pocket Notes on up to 4 linked devices and 1 mobile phone</h5>
+                    <h5 className={styles.banner_sub_heading}>
+                        Send and receive messages without keeping your phone online.
+                    </h5>
+                    <h5 className={styles.banner_sub_heading}>
+                        Use Pocket Notes on up to 4 linked devices and 1 mobile phone
+                    </h5>
                     <h5 className={styles.banner_sub_heading_bottom}>
                         <FontAwesomeIcon icon={faLock} style={{ color: "black", marginRight: "5px" }} />
                         end-to-end encrypted
@@ -59,18 +77,6 @@ export default function NoteData() {
             </div>
         );
     }
-
-    const displayNotes = notesData[selectedGroup].notes;
-
-    useEffect(() => {
-        if (selectedGroup && scrollRef.current) {
-            const notes = notesData[selectedGroup]?.notes || [];
-            if (notes.length > 0) {
-                scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
-            }
-        }
-    }, [selectedGroup, notesData]); // dependency updated
-
 
     return (
         <div className={styles.note_data_body}>
