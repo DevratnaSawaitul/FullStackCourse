@@ -1,0 +1,91 @@
+.notes_group_body {
+    height: 100vh;
+    padding: 10px 0px 10px 10px;
+    min-width: 300px;
+    width: 30%;
+}
+
+.notes_group_sub_body {
+    margin: 20px 0px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 80px);
+}
+
+.create_group_button {
+    width: 95%;
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: medium;
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.group_heading {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+}
+
+
+@media (max-width: 768px) {
+    .notes_group_body {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+.group_item {
+    padding: 10px 20px;
+    white-space: nowrap;      
+    overflow: hidden;          
+    text-overflow: ellipsis;  
+    max-width: 200px;         
+}
+
+
+.group_name_grid {
+    margin: 0px 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    border-radius: 50px 0 0 50px;
+    gap: 10px;
+}
+
+.group_name_dp {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+    text-transform: uppercase;
+}
+
+.group_list_container {
+    flex: 1;
+    overflow-y: auto;
+    max-height: calc(100vh - 150px); 
+}
+
+/* ✅ Optional: Custom scrollbar styling */
+.group_list_container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.group_list_container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+}
+
+.group_list_container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
